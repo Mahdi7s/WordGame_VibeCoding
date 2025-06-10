@@ -1,0 +1,30 @@
+/* General styles for the game page */
+body {
+    /* font-family is set via inline style in index.html,
+       but can be a fallback here if that's removed.
+       For now, the inline style takes precedence. */
+    /* font-family: 'Vazirmatn', sans-serif; */
+
+    /* The following are mostly overridden by inline styles in index.html's head
+       for the direct body containing the canvas, but kept for clarity if external CSS is preferred. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Consistent with index.html inline style */
+    color: #333; /* Default text color for any non-canvas text */
+}
+
+/*
+   The canvas element itself is styled via inline styles in index.html's <head>
+   to ensure it's processed before Kaboom might need it and for direct control.
+   Key styles there are:
+   display: block;
+   max-width: 100vw;
+   max-height: 100vh;
+   object-fit: contain;
+*/
+
+/* Removing unused #gameContainer style */
